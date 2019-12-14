@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateAccountViewController: UIViewController {
 
@@ -37,10 +38,18 @@ class CreateAccountViewController: UIViewController {
             return
         }
         
-        
-        
-        
         //TODO:建帳號
+        
+        Auth.auth().createUser(withEmail: accountString, password: password1String) { (result, error) in
+            if error != nil{
+                print(error?.localizedDescription)
+                self.showAlert("\(error?.localizedDescription ?? "")")
+            }else{
+                self.showAlert("成功建立帳號")
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
+        
         
         
     }
