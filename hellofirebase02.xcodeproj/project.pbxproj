@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		BAFE0C6023A4AE880033C39A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFE0C5F23A4AE880033C39A /* Assets.xcassets */; };
 		BAFE0C6323A4AE880033C39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFE0C6123A4AE880033C39A /* LaunchScreen.storyboard */; };
 		BAFE0C6B23A4AF160033C39A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAFE0C6A23A4AF160033C39A /* GoogleService-Info.plist */; };
+		BAFE0C6D23A4B2560033C39A /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFE0C6C23A4B2560033C39A /* CreateAccountViewController.swift */; };
 		C2BF7B760A6E55D93EC62280 /* Pods_hellofirebase02.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E41DB222A1833CD8BA17933 /* Pods_hellofirebase02.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		BAFE0C6223A4AE880033C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAFE0C6423A4AE880033C39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAFE0C6A23A4AF160033C39A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BAFE0C6C23A4B2560033C39A /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 				29E62DF44FC0C69C770D654C /* Pods-hellofirebase02.debug.xcconfig */,
 				710016308DB86D6E85168584 /* Pods-hellofirebase02.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,6 +92,7 @@
 				BAFE0C5F23A4AE880033C39A /* Assets.xcassets */,
 				BAFE0C6123A4AE880033C39A /* LaunchScreen.storyboard */,
 				BAFE0C6423A4AE880033C39A /* Info.plist */,
+				BAFE0C6C23A4B2560033C39A /* CreateAccountViewController.swift */,
 			);
 			path = hellofirebase02;
 			sourceTree = "<group>";
@@ -211,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAFE0C6D23A4B2560033C39A /* CreateAccountViewController.swift in Sources */,
 				BAFE0C5B23A4AE860033C39A /* ViewController.swift in Sources */,
 				BAFE0C5723A4AE860033C39A /* AppDelegate.swift in Sources */,
 				BAFE0C5923A4AE860033C39A /* SceneDelegate.swift in Sources */,
