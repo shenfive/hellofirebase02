@@ -15,6 +15,7 @@
 		BAFE0C6323A4AE880033C39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAFE0C6123A4AE880033C39A /* LaunchScreen.storyboard */; };
 		BAFE0C6B23A4AF160033C39A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAFE0C6A23A4AF160033C39A /* GoogleService-Info.plist */; };
 		BAFE0C6D23A4B2560033C39A /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFE0C6C23A4B2560033C39A /* CreateAccountViewController.swift */; };
+		BAFE0C6F23A4B56A0033C39A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFE0C6E23A4B56A0033C39A /* File.swift */; };
 		C2BF7B760A6E55D93EC62280 /* Pods_hellofirebase02.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E41DB222A1833CD8BA17933 /* Pods_hellofirebase02.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		BAFE0C6423A4AE880033C39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAFE0C6A23A4AF160033C39A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BAFE0C6C23A4B2560033C39A /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		BAFE0C6E23A4B56A0033C39A /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				BAFE0C6123A4AE880033C39A /* LaunchScreen.storyboard */,
 				BAFE0C6423A4AE880033C39A /* Info.plist */,
 				BAFE0C6C23A4B2560033C39A /* CreateAccountViewController.swift */,
+				BAFE0C6E23A4B56A0033C39A /* File.swift */,
 			);
 			path = hellofirebase02;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAFE0C6F23A4B56A0033C39A /* File.swift in Sources */,
 				BAFE0C6D23A4B2560033C39A /* CreateAccountViewController.swift in Sources */,
 				BAFE0C5B23A4AE860033C39A /* ViewController.swift in Sources */,
 				BAFE0C5723A4AE860033C39A /* AppDelegate.swift in Sources */,
