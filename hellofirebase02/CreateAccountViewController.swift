@@ -28,11 +28,13 @@ class CreateAccountViewController: UIViewController {
         //密碼六碼以上
         if password1String.count < 6{
             showAlert("密碼必需六碼以上")
+            return
         }
         
         //TODO:檢查密碼是否一致
         if password1String != password2String{
             showAlert("兩次密碼不一致")
+            return
         }
         
         
