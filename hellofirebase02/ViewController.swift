@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginStatus: UILabel!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var checkEmail: UILabel!
     var mAuth:Auth!
     
     override func viewDidLoad() {
@@ -25,6 +26,8 @@ class ViewController: UIViewController {
             if let user = user{
                 print(user.uid)
                 self.loginStatus.text = "login:\(user.uid)"
+                self.checkEmail.text = "經過 mail 認證:\(user.isEmailVerified)"
+
             }else{
                 print("logout")
                 self.loginStatus.text = "logout"
@@ -40,6 +43,14 @@ class ViewController: UIViewController {
         } catch  {
             showAlert("\(error.localizedDescription)")
         }
+        
+    }
+    @IBAction func emailVeri(_ sender: Any) {
+        mAuth.currentUser?.sendEmailVerification(completion: { (error) in
+            if error != nil{
+                self.showAlert("error:\(error?.localizedDescription ?? "不明email錯誤")")
+            }
+        })
         
     }
     

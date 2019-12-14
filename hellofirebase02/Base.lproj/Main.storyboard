@@ -76,27 +76,53 @@
                                     <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Cn-xj-twc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkN-5E-hEI">
+                                <rect key="frame" x="16" y="102" width="222" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JEr-fK-zJP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vP-Ba-lp2">
+                                <rect key="frame" x="9" y="140" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="8M9-ge-Wfd"/>
+                                    <constraint firstAttribute="height" constant="30" id="erZ-Zs-SSr"/>
+                                </constraints>
+                                <state key="normal" title="EmailVer"/>
+                                <connections>
+                                    <action selector="emailVeri:" destination="BYZ-38-t0r" eventType="touchUpInside" id="da0-An-y8J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="o3w-4y-7pC" firstAttribute="top" secondItem="r94-qc-I0I" secondAttribute="bottom" constant="19" id="0OR-GE-LJj"/>
+                            <constraint firstItem="9vP-Ba-lp2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="5d9-Cd-Iz8"/>
+                            <constraint firstItem="fkN-5E-hEI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5yR-bc-ckw"/>
+                            <constraint firstItem="fkN-5E-hEI" firstAttribute="top" secondItem="VWm-JQ-gaW" secondAttribute="bottom" constant="8" id="Bgp-z4-yDI"/>
                             <constraint firstItem="aFa-Sx-eja" firstAttribute="top" secondItem="BoF-wg-Goc" secondAttribute="bottom" constant="17" id="CG5-ul-uIg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o3w-4y-7pC" secondAttribute="trailing" constant="20" id="Ix9-ai-t0p"/>
                             <constraint firstItem="r94-qc-I0I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="OXl-4p-9NZ"/>
                             <constraint firstItem="VWm-JQ-gaW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QV9-vS-CRR"/>
                             <constraint firstItem="v7z-lT-05j" firstAttribute="top" secondItem="aFa-Sx-eja" secondAttribute="bottom" constant="17" id="RKV-P3-ngw"/>
+                            <constraint firstItem="o3w-4y-7pC" firstAttribute="leading" secondItem="fkN-5E-hEI" secondAttribute="trailing" constant="17" id="T71-vp-Ixi"/>
                             <constraint firstItem="BoF-wg-Goc" firstAttribute="top" secondItem="VWm-JQ-gaW" secondAttribute="bottom" constant="100" id="TEC-tA-ruK"/>
                             <constraint firstItem="VWm-JQ-gaW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="UyK-ss-1jF"/>
                             <constraint firstItem="BoF-wg-Goc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="cv8-Hn-Gu4"/>
                             <constraint firstItem="aFa-Sx-eja" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="fFX-0e-gOY"/>
                             <constraint firstItem="r94-qc-I0I" firstAttribute="leading" secondItem="VWm-JQ-gaW" secondAttribute="trailing" constant="17" id="fTO-n9-6Ox"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r94-qc-I0I" secondAttribute="trailing" constant="20" id="oMC-ep-EXs"/>
+                            <constraint firstItem="9vP-Ba-lp2" firstAttribute="top" secondItem="fkN-5E-hEI" secondAttribute="bottom" constant="8" id="rXu-XO-Igz"/>
                             <constraint firstItem="v7z-lT-05j" firstAttribute="trailing" secondItem="aFa-Sx-eja" secondAttribute="trailing" id="x3L-4E-afh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ncd-Wz-CkE"/>
                     <connections>
+                        <outlet property="checkEmail" destination="fkN-5E-hEI" id="pxu-9d-a5E"/>
                         <outlet property="email" destination="BoF-wg-Goc" id="DUi-4A-XOD"/>
                         <outlet property="loginStatus" destination="VWm-JQ-gaW" id="auV-yH-vGp"/>
                         <outlet property="password" destination="aFa-Sx-eja" id="PxF-pU-27v"/>

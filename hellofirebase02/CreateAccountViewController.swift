@@ -45,7 +45,6 @@ class CreateAccountViewController: UIViewController {
                 print(error?.localizedDescription)
                 self.showAlert("\(error?.localizedDescription ?? "")")
             }else{
-                self.showAlert("成功建立帳號")
                 self.navigationController?.popViewController(animated: true)
             }
         }
